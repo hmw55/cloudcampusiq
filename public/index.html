@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f8f5" />
+    <meta name="description" content="CloudCampusIQ — a modern learning platform built on AWS." />
+    <title>CloudCampusIQ | Learn without limits</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/" aria-label="CloudCampusIQ home">
+          <span class="brand-mark">C</span>
+          <span>CloudCampus<span class="brand-accent">IQ</span></span>
+        </a>
+        <nav aria-label="Main navigation">
+          <a href="#courses">Explore courses</a>
+          <a href="#about">About</a>
+        </nav>
+        <a class="header-cta" href="#courses">Start learning <span aria-hidden="true">↗</span></a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <div class="eyebrow"><span class="eyebrow-dot"></span> A smarter way to learn</div>
+            <h1>Build skills.<br /><em>Shape what's next.</em></h1>
+            <p>Practical, thoughtfully designed courses to help you navigate technology, strengthen your expertise, and grow with confidence.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#courses">Explore courses <span aria-hidden="true">↗</span></a>
+              <a class="text-link" href="#about">How it works <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="hero-note"><span class="note-icon">✦</span> Learn at your own pace. Grow on your terms.</div>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="art-orbit orbit-one"></div>
+            <div class="art-orbit orbit-two"></div>
+            <div class="art-center">
+              <div class="art-symbol">✳</div>
+              <div class="art-caption">Your next chapter<br />starts here.</div>
+            </div>
+            <div class="art-chip chip-top">✦ &nbsp; New possibilities</div>
+            <div class="art-chip chip-bottom">↗ &nbsp; Keep growing</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats-strip" aria-label="Platform highlights">
+        <div class="container stats-inner">
+          <div><strong>04</strong><span>Curated courses</span></div>
+          <div><strong>100%</strong><span>Self-paced learning</span></div>
+          <div><strong>∞</strong><span>Room to grow</span></div>
+        </div>
+      </section>
+
+      <section class="courses-section" id="courses">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="section-kicker">EXPLORE THE CATALOG</span>
+              <h2>Find your next <em>big thing.</em></h2>
+            </div>
+            <p>From cloud foundations to software architecture, discover skills worth building.</p>
+          </div>
+
+          <div class="filter-row" role="group" aria-label="Filter courses">
+            <button class="filter active" type="button" data-filter="All">All courses</button>
+            <button class="filter" type="button" data-filter="Cloud Computing">Cloud</button>
+            <button class="filter" type="button" data-filter="Cybersecurity">Security</button>
+            <button class="filter" type="button" data-filter="DevOps">DevOps</button>
+            <button class="filter" type="button" data-filter="Software Engineering">Engineering</button>
+          </div>
+
+          <div class="course-grid" id="course-grid" aria-live="polite">
+            <p class="loading">Loading courses…</p>
+          </div>
+          <p class="course-error" id="course-error" role="alert" hidden></p>
+        </div>
+      </section>
+
+      <section class="about-section" id="about">
+        <div class="container about-grid">
+          <div>
+            <span class="section-kicker">BUILT FOR WHAT'S NEXT</span>
+            <h2>Learning should feel like <em>possibility.</em></h2>
+          </div>
+          <div>
+            <p>CloudCampusIQ is a demonstration learning platform designed to showcase modern cloud deployment, secure application architecture, and operational monitoring on AWS.</p>
+            <p class="about-secondary">Explore courses, discover topics, and see how thoughtful engineering creates dependable digital experiences.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span class="brand footer-brand">CloudCampus<span class="brand-accent">IQ</span></span>
+        <span>Built for learning. Engineered for the cloud.</span>
+        <span>© <span id="year"></span> CloudCampusIQ</span>
+      </div>
+    </footer>
+
+    <dialog id="course-dialog" aria-labelledby="dialog-title">
+      <button class="dialog-close" id="dialog-close" type="button" aria-label="Close course details">×</button>
+      <span class="section-kicker" id="dialog-category"></span>
+      <h2 id="dialog-title"></h2>
+      <p id="dialog-description"></p>
+      <div class="dialog-meta" id="dialog-meta"></div>
+      <p class="dialog-note">Course enrollment is not available in this demonstration.</p>
+    </dialog>
+  </body>
+</html>

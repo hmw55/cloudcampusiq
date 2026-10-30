@@ -1,0 +1,37 @@
+{
+  "name": "cloudcampusiq",
+  "version": "1.0.0",
+  "description": "A secure AWS-hosted course platform demonstrating cloud architecture, deployment, monitoring, and cost management.",
+  "main": "dis/server.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "start": "node dist/server.js"
+  },
+  "engines": {
+    "node": ">=22 <25"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hmw55/cloudcampusiq.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/hmw55/cloudcampusiq/issues"
+  },
+  "homepage": "https://github.com/hmw55/cloudcampusiq#readme",
+  "dependencies": {
+    "express": "^5.3.0",
+    "helmet": "^8.3.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  }
+}
